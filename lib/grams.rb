@@ -11,9 +11,15 @@ class String
     arg_array.each() do |letter|
       arg_hash[letter] += 1
     end
-    # output for initial spec
-    # obj_array + ", " + arg_array
-    obj_hash == arg_hash
+    anagrams = obj_hash == arg_hash
+    palindromes = obj_array.reverse() == arg_array
+    if anagrams
+      "These words are anagrams"
+      if palindromes
+        "These words are also palindromes"
+      end
+    else
+      "These words are nothing special"
   end
 
   # define_method(:grams) do |comparison|
