@@ -24,4 +24,7 @@ describe('String#grams') do
   it('checks for antigrams') do
     expect("hi".grams("bye")).to(eq("No letters match! You have an antigram."))
   end
+  it('ignores symbols') do
+    expect("aren't".grams("Taren")).to(eq("These words are anagrams."))
+  end
 end

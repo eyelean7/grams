@@ -2,8 +2,10 @@ class String
   define_method(:grams) do |comparison|
     vowels = ['a','e','i','o','u','y']
 
-    obj = self.delete(" ")
-    arg = comparison.delete(" ")
+    obj = self
+    obj.gsub!(/[^a-zA-Z0-9]*/, "")
+    arg = comparison
+    arg.gsub!(/[^a-zA-Z0-9]*/, "")
 
     obj_array = obj.downcase.split("")
     arg_array = arg.downcase.split("")
