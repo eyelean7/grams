@@ -13,7 +13,7 @@ _The program takes two user input strings and tells the user whether their two i
 
 * _Clone or download repository_
 * _Open in Chrome_
-* _OR open in [heroku](https://eyelean7.github.io/chords)_
+* _OR open in [heroku](https://dry-crag-31066.herokuapp.com/)_
 
 
 ## Support and contact details
