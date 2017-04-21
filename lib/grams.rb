@@ -1,14 +1,19 @@
 class String
   define_method(:grams) do |comparison|
-    obj_array = self.split("")
-    arg_array = comparison.split("")
+    obj_array = self.downcase.split("")
+    arg_array = comparison.downcase.split("")
 
     obj_hash = Hash.new(0)
     obj_array.each() do |letter|
       obj_hash[letter] += 1
     end
+    arg_hash = Hash.new(0)
+    arg_array.each() do |letter|
+      arg_hash[letter] += 1
+    end
+    # output for initial spec
     # obj_array + ", " + arg_array
-    obj_hash
+    obj_hash == arg_hash
   end
 
   # define_method(:grams) do |comparison|
