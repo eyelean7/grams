@@ -19,6 +19,11 @@ label {
 .btn {
   background-color: lightpink;
   color: #47494c;
-  /*float: right;*/
   border: 2px solid #47494c;
+}
+
+.panel {
+  margin-top: 10px;
+  text-align: center;
+  background-color: darkgrey;
 }

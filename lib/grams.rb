@@ -31,9 +31,9 @@ class String
         palindromes = obj_array.reverse() == arg_array
         if anagrams
           if palindromes
-            "These words are not only anagrams but also palindromes."
+            "These words are not only anagrams but also palindromes 0.o"
           else
-            "These words are anagrams."
+            "These words are anagrams! That seems special."
           end
         else
           "These words are nothing special."

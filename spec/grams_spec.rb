@@ -9,14 +9,14 @@ describe('String#grams') do
   end
 
   it('confirms suspicions if words are anagrams') do
-    expect("stick".grams("ticks")).to(eq("These words are anagrams."))
+    expect("stick".grams("ticks")).to(eq("These words are anagrams! That seems special."))
   end
 
   it('delivers joyous message upon receiving a palindrome') do
-    expect("mined".grams("denim")).to(eq("These words are not only anagrams but also palindromes."))
+    expect("mined".grams("denim")).to(eq("These words are not only anagrams but also palindromes 0.o"))
   end
   it('ignores spaces') do
-    expect("m ine d".grams("denim")).to(eq("These words are not only anagrams but also palindromes."))
+    expect("m ine d".grams("denim")).to(eq("These words are not only anagrams but also palindromes 0.o"))
   end
   it('does not allow words without vowels') do
     expect("mdskj".grams("feel")).to(eq("Hey... that's not even a word! Try again."))
@@ -25,6 +25,6 @@ describe('String#grams') do
     expect("hi".grams("bye")).to(eq("No letters match! You have an antigram."))
   end
   it('ignores symbols') do
-    expect("aren't".grams("Taren")).to(eq("These words are anagrams."))
+    expect("aren't".grams("Taren")).to(eq("These words are anagrams! That seems special."))
   end
 end
