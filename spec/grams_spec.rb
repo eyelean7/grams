@@ -15,5 +15,7 @@ describe('String#grams') do
   it('delivers joyous message upon receiving a palindrome') do
     expect("mined".grams("denim")).to(eq("These words are not only anagrams but also palindromes"))
   end
-
+  it('ignores spaces') do
+    expect("m ine d".grams("denim")).to(eq("These words are not only anagrams but also palindromes"))
+  end
 end

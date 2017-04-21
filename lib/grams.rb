@@ -1,7 +1,10 @@
 class String
   define_method(:grams) do |comparison|
-    obj_array = self.downcase.split("")
-    arg_array = comparison.downcase.split("")
+    obj = self.delete(" ")
+    arg = comparison.delete(" ")
+
+    obj_array = obj.downcase.split("")
+    arg_array = arg.downcase.split("")
 
     obj_hash = Hash.new(0)
     obj_array.each() do |letter|
