@@ -1,0 +1,19 @@
+body {
+  background-image: url("../img/letters.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #47494c;
+  color: lightpink;
+}
+
+h1 {
+  text-align: center;
+}
+
+.btn {
+  background-color: lightpink;
+  color: #47494c;
+  /*float: right;*/
+  border: 2px solid #47494c;
+}
